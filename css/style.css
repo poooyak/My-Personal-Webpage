@@ -1,6 +1,16 @@
 body {
-  font-family: 'Lora', serif;
+  font-family: 'roboto_slab';
   line-height: 160%;
+}
+
+@font-face {
+	font-family: 'roboto_slab';
+	src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+	font-family: 'roboto_bold';
+	src: url('../fonts/RobotoSlab-Regular.ttf');
 }
 
 img {
@@ -26,17 +36,39 @@ img {
 	margin-top: 0px;
 }
 
+a {
+	padding-bottom: 5px;
+	color: firebrick;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 a:hover {
+	position:relative;
+	top:-2px;
     text-decoration: none;
-    color: orange;
+    color: firebrick;
+}
+
+.highlight{
+    color: firebrick;
+    font-family: 'roboto_bold';
+    font-weight: bold
 }
 
 .mini-header {
-	font-family: "Cinzel", serif;
+	font-family: 'roboto_bold';
+    font-size:2em;
+	text-transform:uppercase;
+	font-weight: 300;
 }
 
 h3 {
 	margin-top: 12px;
+}
+
+h4 {
+    line-height: 25px;
 }
 
 .aboutpic1 {
@@ -70,8 +102,9 @@ h3 {
 	margin-right: 40px;
 	margin-bottom: 30px;
 	color: #000000;
-	font-family: "Cinzel", serif;
+	font-family: 'roboto_bold';
 	font-size: larger;
+	text-transform:uppercase;
 }
 
 .alignleft {
@@ -83,7 +116,7 @@ h3 {
 
 strong {
 	font-weight: 700;
-	font-family: 'Lora', serif;
+	font-family: 'roboto_slab';
 }
 
 .alignleft2 {
@@ -114,19 +147,53 @@ strong {
 
 .header-link a {
 	color: #000000;
-	font-family: "Cinzel", serif;
+	font-family: 'roboto_bold';
 	font-size: larger;
 }
 
 .header-link b {
-	color: orange;
-	font-family: "Cinzel", serif;
+	color: firebrick;
+	font-family: 'roboto_bold';
 	font-size: larger;
 }
 
 .header-link a:hover {
 	text-decoration: none;
-	color: orange;
+	color: firebrick;
 	font-size: larger;
 }
 
+.news {
+		border:1px solid black;
+		max-height:12em;
+		min-width:20em;
+		/*min-height:20em;*/
+		overflow:auto;
+		list-style-position: outside;
+		padding-left: 2.2em;
+	}
+
+
+
+ul.pubs > li{
+	margin-bottom: 1.2em;
+}
+
+.aParent div {
+  float: left;
+  clear: both; 
+}
+
+.wrapper {
+	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
+    padding-bottom: 2cm;
+
+}
+
+.posts-wrapper {
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
